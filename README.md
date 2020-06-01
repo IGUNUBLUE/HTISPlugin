@@ -1,2 +1,2 @@
-# HTIS taller (HonesTI Support Taller)
-Plugin para administración de taller informatico en facturascripts
+# HTIS Plugin (HonesTI Support Plugin)
+Plugin para administración de taller informatico (HonesTI Support) en facturascripts
