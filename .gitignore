@@ -1,0 +1,4 @@
+# Codelite config files
+*.phpj
+.codelite
+*.workspace
