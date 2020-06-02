@@ -1,7 +1,22 @@
 <?php
+namespace FacturaScripts\Plugins\HtisPlugin\Model;
 
-class Taller {
+use FacturaScripts\Core\Model\Base;
 
-	public function __construct() {
-	}
+class Taller extends Base\ModelClass {
+    use Base\ModelTrait;
+
+    public $creationdate;
+    public $idtaller;
+    public $name;
+
+    public static function primaryColumn()
+    {
+        return 'idtaller';
+    }
+
+    public static function tableName()
+    {
+        return 'talleres';
+    }
 }

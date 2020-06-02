@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <column>
+        <name>creationdate</name>
+        <type>date</type>
+    </column>
+    <column>
+        <name>idtaller</name>
+        <type>serial</type>
+        <null>NO</null>
+    </column>
+    <column>
+        <name>name</name>
+        <type>character varying(100)</type>
+    </column>
+    <constraint>
+        <name>talleres_pkey</name>
+        <type>PRIMARY KEY (idtaller)</type>
+    </constraint>
+</table>
