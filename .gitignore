@@ -2,3 +2,6 @@
 *.phpj
 .codelite
 *.workspace
+
+# Vscodium config files
+*.code-workspace
