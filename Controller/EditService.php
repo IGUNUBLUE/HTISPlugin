@@ -9,4 +9,14 @@ class EditService extends EditController {
     {
         return 'Service';
     }
+
+    public function getPageData()
+    {
+        $pageData = parent::getPageData();
+        $pageData['menu'] = 'HTIS Plugin';
+        $pageData['title'] = 'Servicios';
+        $pageData['icon'] = 'fas fa-tools';
+
+        return $pagedata;
+    }
 }

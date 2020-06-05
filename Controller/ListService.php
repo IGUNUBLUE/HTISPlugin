@@ -4,8 +4,7 @@ namespace FacturaScripts\Plugins\HtisPlugin\Controller;
 
 use FacturaScripts\Core\Lib\ExtendedController\ListController;
 
-class ListService extends ListController
-{
+class ListService extends ListController {
     public function getPageData()
     {
         $pageData = parent::getPageData();
