@@ -1,4 +1,5 @@
 <?php
+
 namespace FacturaScripts\Plugins\HtisPlugin\Model;
 
 use FacturaScripts\Core\Model\Base;
