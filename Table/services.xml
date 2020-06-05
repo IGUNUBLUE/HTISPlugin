@@ -5,7 +5,7 @@
         <type>date</type>
     </column>
     <column>
-        <name>idtaller</name>
+        <name>idservice</name>
         <type>serial</type>
         <null>NO</null>
     </column>
@@ -14,7 +14,7 @@
         <type>character varying(100)</type>
     </column>
     <constraint>
-        <name>talleres_pkey</name>
-        <type>PRIMARY KEY (idtaller)</type>
+        <name>services_pkey</name>
+        <type>PRIMARY KEY (idservice)</type>
     </constraint>
 </table>

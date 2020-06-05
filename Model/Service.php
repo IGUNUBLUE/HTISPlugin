@@ -3,20 +3,20 @@ namespace FacturaScripts\Plugins\HtisPlugin\Model;
 
 use FacturaScripts\Core\Model\Base;
 
-class Taller extends Base\ModelClass {
+class Service extends Base\ModelClass {
     use Base\ModelTrait;
 
     public $creationdate;
-    public $idtaller;
+    public $idservice;
     public $name;
 
     public static function primaryColumn()
     {
-        return 'idtaller';
+        return 'idservice';
     }
 
     public static function tableName()
     {
-        return 'talleres';
+        return 'services';
     }
 }
