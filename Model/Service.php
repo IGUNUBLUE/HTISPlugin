@@ -7,9 +7,14 @@ use FacturaScripts\Core\Model\Base;
 class Service extends Base\ModelClass {
     use Base\ModelTrait;
 
+    public $codcliente;
     public $creationdate;
+    public $description;
     public $idservice;
     public $name;
+    public $total;
+    public $user;
+    public $verified;
 
     public static function primaryColumn()
     {
