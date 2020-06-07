@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <view>
     <columns>
-        <column name="id" order="100">
+        <column name="id" order="100" title='ID servicio'>
             <widget type="text" fieldname="idservice" />
         </column>
-        <column name="name" order="110">
-            <widget type="text" fieldname="name" />
+        <column name="codcliente" order="110" display='right' title='ID cliente'>
+            <widget type="autocomplete" fieldname="codcliente" onclick="EditCliente" />
         </column>
-        <column name="creationdate" title="creation-date" display="right" order="120">
+        <column name="customer" order="120" display='right' title='Nombre'>
+            <widget type="autocomplete" fieldname="codcliente" onclick="EditCliente" >
+                <values source="clientes" fieldcode="codcliente" fieldtitle="nombre"></values>
+            </widget>
+        </column>
+        <column name="creationdate" title="Fecha de entrada" display="right" order="130">
             <widget type="date" fieldname="creationdate"/>
         </column>
+         <column name="exitdate" numcolumns='2' title="Fecha de salida" display='right' order="140">
+            <widget type="date" fieldname="exitdate"/>
+        </column>
+        <column  name="detail" numcolumns='6' order="150" title='Detalles del equipo' display='right'>
+            <widget type="textarea" fieldname="detail" readonly='dinamic'/>
+        </column>
+        <column name="diagnostic" numcolumns="6" order="160" title='Diagnostico realizado' display='right'>
+            <widget type="textarea" fieldname="diagnostic"/>
+        </column>
+        <column name="solution" numcolumns="6" order="170" title='Solución del problema' display='right'>
+            <widget type="textarea" fieldname="description"/>
+        </column>
+        <column name="user" order="180" title='Tecnico' display='right'>
+            <widget type="select" fieldname="user" required='true'>
+                <values source="users" fieldcode="nick" fieldtitle="nick"></values>
+            </widget>
+        </column>
     </columns>
+    <rows>
+        <row type="status">
+            <option color="success" fieldname="verified">1</option>
+            <option color="warning" fieldname="verified">0</option>
+        </row>
+    </rows>
 </view>
