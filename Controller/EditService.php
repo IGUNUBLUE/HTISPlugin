@@ -16,7 +16,6 @@ class EditService extends EditController {
         $page['menu'] = 'HTIS Plugin';
         $page['title'] = 'Servicio #';
         $page['icon'] = 'fas fa-tools';
-        $page['showonmenu'] = false;
 
         return $page;
     }

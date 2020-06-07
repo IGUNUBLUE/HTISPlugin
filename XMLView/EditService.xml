@@ -2,42 +2,45 @@
 <view>
     <columns>
         <group name="basic" numcolumns="12">
-            <column name="customer" order="100">
+            <column name="name" title='Cliente' order="100">
                <widget type="autocomplete" fieldname="codcliente" onclick="EditCliente" readonly='dinamic'>
                   <values source="clientes" fieldcode="codcliente" fieldtitle="nombre"></values>
                </widget>
             </column>
-            <column name="creationdate" numcolumns='2' title="Fecha de entrada" order="120">
+            <column name="id" title='ID cliente' order="110" numcolumns='2'>
+                <widget type="text" fieldname="codcliente" readonly='true'/>
+            </column>
+            <column name="creationdate" title="Fecha de entrada" order="120" numcolumns='2'>
                 <widget type="date" fieldname="creationdate" readonly='dinamic'/>
             </column>
         </group>
         <group name='details' numcolumns='12'>
-            <column name="detail" numcolumns='6' order="130" title='Información sobre el equipo'>
+            <column name="detail" title='Información sobre el equipo' order="130" numcolumns='6'>
                 <widget type="textarea" fieldname="detail" readonly='dinamic'/>
             </column>
-            <column name="problem" numcolumns='6' order="130" title='Problema que presenta el equipo'>
+            <column name="problem" title='Problema que presenta el equipo' order="140" numcolumns='6'>
                 <widget type="textarea" fieldname="problem"/>
             </column>
-            <column name="diagnostic" numcolumns="6" order="130" title='Diagnostico realizado'>
+            <column name="diagnostic" title='Diagnostico realizado' order="150" numcolumns="6">
                 <widget type="textarea" fieldname="diagnostic"/>
             </column>
-            <column name="solution" numcolumns="6" order="130" title='Solución del problema'>
+            <column name="solution" title='Solución del problema' order="160" numcolumns="6">
                 <widget type="textarea" fieldname="description"/>
             </column>
         </group>
         <group name="advanced" numcolumns="12">
-            <column name="user" order="100">
+            <column name="user" order="170">
                <widget type="select" fieldname="user" required='true' readonly='dinamic'>
                   <values source="users" fieldcode="nick" fieldtitle="nick"></values>
                </widget>
             </column>
-            <column name="total" order="110" title='Valor de la mano de obra'>
+            <column name="total" title='Valor de la mano de obra' order="180">
                 <widget type="money" fieldname="total" readonly='dinamic'/>
             </column>
-            <column name="exitdate" numcolumns='2' title="Fecha de salida" order="120">
+            <column name="exitdate" title="Fecha de salida" order="190" numcolumns='2'>
                 <widget type="date" fieldname="exitdate" readonly='dinamic'/>
             </column>
-            <column name="verified" numcolumns='2' order="120" title='Reparado'>
+            <column name="verified" title='Reparado' order="190" numcolumns='2'>
                 <widget type="checkbox" fieldname="verified"/>
             </column>
         </group>

@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <view>
     <columns>
-        <column name="id" order="100" title='ID servicio'>
+        <column name="id" title='ID servicio' order="100">
             <widget type="text" fieldname="idservice" />
         </column>
-        <column name="codcliente" order="110" display='right' title='ID cliente'>
-            <widget type="autocomplete" fieldname="codcliente" onclick="EditCliente" />
+        <column name="codcliente" display='right' title='ID cliente' order="110">
+            <widget type="text" fieldname="codcliente" onclick="EditCliente" />
         </column>
-        <column name="customer" order="120" display='right' title='Nombre'>
-            <widget type="autocomplete" fieldname="codcliente" onclick="EditCliente" >
-                <values source="clientes" fieldcode="codcliente" fieldtitle="nombre"></values>
-            </widget>
+        <column name="name" display='right' title='Nombre' order="120">
+            <widget type="text" fieldname="name" onclick="EditCliente" />
         </column>
-        <column name="creationdate" title="Fecha de entrada" display="right" order="130">
+        <column name="creationdate" display="right" title="Fecha de entrada" order="130">
             <widget type="date" fieldname="creationdate"/>
         </column>
-         <column name="exitdate" numcolumns='2' title="Fecha de salida" display='right' order="140">
+         <column name="exitdate" display='right' title="Fecha de salida" order="140">
             <widget type="date" fieldname="exitdate"/>
         </column>
-        <column  name="detail" numcolumns='6' order="150" title='Detalles del equipo' display='right'>
+        <column  name="detail" display='none' title='Detalles del equipo' order="150">
             <widget type="textarea" fieldname="detail" readonly='dinamic'/>
         </column>
-        <column name="diagnostic" numcolumns="6" order="160" title='Diagnostico realizado' display='right'>
+        <column name="diagnostic" display='right' title='Diagnostico realizado' order="160">
             <widget type="textarea" fieldname="diagnostic"/>
         </column>
-        <column name="solution" numcolumns="6" order="170" title='Solución del problema' display='right'>
+        <column name="solution" display='right' title='Solución del problema' order="170">
             <widget type="textarea" fieldname="description"/>
         </column>
-        <column name="user" order="180" title='Tecnico' display='right'>
+        <column name="user" display='right' title='Tecnico' order="180">
             <widget type="select" fieldname="user" required='true'>
                 <values source="users" fieldcode="nick" fieldtitle="nick"></values>
             </widget>
