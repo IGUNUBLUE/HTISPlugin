@@ -30,6 +30,9 @@
                 <values source="users" fieldcode="nick" fieldtitle="nick"></values>
             </widget>
         </column>
+        <column name="total" display='right' title='Costo' order="190">
+            <widget type="money" fieldname="total"/>
+        </column>
     </columns>
     <rows>
         <row type="status">
