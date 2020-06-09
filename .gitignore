@@ -1,7 +1,6 @@
-# Codelite config files
+# Codelite, vscodium, netbeans config files
 *.phpj
 .codelite
 *.workspace
-
-# Vscodium config files
 *.code-workspace
+nbproject/

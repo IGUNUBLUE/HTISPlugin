@@ -19,5 +19,8 @@ class ListService extends ListController {
     {
         $this->addView('ListService', 'Service');
         $this->addSearchFields('ListService', ['idservice', 'codcliente', 'user']);
+        
+       //filter
+        $this->addFilterCheckbox('ListProject', 'verified');
     }
 }
