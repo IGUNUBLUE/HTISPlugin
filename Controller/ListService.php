@@ -18,9 +18,11 @@ class ListService extends ListController {
     protected function createViews()
     {
         $this->addView('ListService', 'Service');
-        $this->addSearchFields('ListService', ['idservice', 'codcliente', 'user']);
+        //$this->addSearchFields('ListService', ['idservice', 'codcliente', 'user']);
         
        //filters
-        $this->addFilterCheckbox('ListProject', 'verified');
+        $this->addFilterAutocomplete('ListService', 'codcliente', 'name', 'codcliente', 'clientes', 'codcliente', 'nombre');
+        $this->addFilterPeriod('ListService', 'creationdate', 'period', 'creationdate');
+        $this->addFilterCheckbox('ListService', 'verified', 'Reparado');
     }
 }

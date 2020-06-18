@@ -12,25 +12,28 @@
                 <values source="clientes" fieldcode="codcliente" fieldtitle="nombre"></values>
             </widget>
         </column>
-        <column name="creationdate" display="right" title="Fecha de entrada" order="130">
+        <column name="creationdate" display="right" title="Fecha de entrada" order="120">
             <widget type="date" fieldname="creationdate"/>
         </column>
-         <column name="exitdate" display='right' title="Fecha de salida" order="140">
+         <column name="exitdate" display='right' title="Fecha de salida" order="130">
             <widget type="date" fieldname="exitdate"/>
         </column>
-        <column  name="detail" display='none' title='Detalles del equipo' order="150">
+        <column  name="detail" display='none' title='Detalles del equipo' order="140">
             <widget type="textarea" fieldname="detail" readonly='dinamic'/>
         </column>
-        <column name="diagnostic" display='right' title='Diagnostico realizado' order="160">
+        <column name="diagnostic" display='right' title='Diagnostico realizado' order="150">
             <widget type="textarea" fieldname="diagnostic"/>
         </column>
-        <column name="solution" display='right' title='Solución del problema' order="170">
+        <column name="solution" display='right' title='Solución del problema' order="160">
             <widget type="textarea" fieldname="description"/>
         </column>
-        <column name="user" display='right' title='Tecnico' order="180">
+        <column name="user" display='right' title='Tecnico' order="170">
             <widget type="select" fieldname="user" required='true'>
                 <values source="users" fieldcode="nick" fieldtitle="nick"></values>
             </widget>
+        </column>
+        <column name="verified" display='right' title='Reparado' order="180">
+            <widget type="checkbox" fieldname="verified"/>
         </column>
         <column name="total" display='right' title='Costo' order="190">
             <widget type="money" fieldname="total"/>
