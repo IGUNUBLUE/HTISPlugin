@@ -39,6 +39,9 @@ class EditService extends EditController {
 
             default:
                 parent::loadData($viewName, $view);
+                if(!$this->views[$viewName]->model->exists()) {
+                    $this->views[$viewName]->model->user = $this->user->nick;
+                }
                 break;
         }
     }
