@@ -25,7 +25,7 @@
                 <widget type="textarea" fieldname="diagnostic"/>
             </column>
             <column name="solution" title='Solución del problema' order="160" numcolumns="6">
-                <widget type="textarea" fieldname="description"/>
+                <widget type="textarea" fieldname="solution"/>
             </column>
         </group>
         <group name="advanced" numcolumns="12">
