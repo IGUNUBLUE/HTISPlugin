@@ -25,7 +25,7 @@
             <widget type="textarea" fieldname="diagnostic"/>
         </column>
         <column name="solution" display='right' title='Solución del problema' order="160">
-            <widget type="textarea" fieldname="description"/>
+            <widget type="textarea" fieldname="solution"/>
         </column>
         <column name="user" display='right' title='Tecnico' order="170">
             <widget type="select" fieldname="user" required='true'>
