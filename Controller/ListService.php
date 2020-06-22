@@ -24,5 +24,6 @@ class ListService extends ListController {
         $this->addFilterAutocomplete('ListService', 'codcliente', 'name', 'codcliente', 'clientes', 'codcliente', 'nombre');
         $this->addFilterPeriod('ListService', 'creationdate', 'period', 'creationdate');
         $this->addFilterCheckbox('ListService', 'verified', 'Reparado');
+        $this->addOrderBy('ListService', ['creationdate'], 'creation-date', 2);
     }
 }
