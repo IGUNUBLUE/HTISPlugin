@@ -24,7 +24,7 @@ class EditService extends EditController {
     protected function createViews() {
         parent::createViews();
         
-        $this->addListView('ListService', 'Service', 'Historial');
+        $this->addListView('ListService', 'Service', 'Historial', 'fas fa-tools');
         $this->setTabsPosition('top');
     }
     

@@ -8,7 +8,7 @@ class EditCliente extends ParentController {
     protected function createViews() {
         parent::createViews();
         
-        $this->addListView('ListService', 'Service', 'Servicios');
+        $this->addListView('ListService', 'Service', 'Servicios', 'fas fa-tools');
     }
     
     protected function loadData($viewName, $view)
