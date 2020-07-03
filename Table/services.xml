@@ -25,6 +25,10 @@
         <type>text</type>
     </column>
     <column>
+        <name>serialn</name>
+        <type>text</type>
+    </column>
+    <column>
         <name>idservice</name>
         <type>serial</type>
         <null>NO</null>

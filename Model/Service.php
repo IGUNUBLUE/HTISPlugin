@@ -16,10 +16,10 @@ class Service extends Base\ModelClass {
     public $manufacturer;
     public $model;
     public $problem;
+    public $serialn;
     public $solution;
     public $total;
     public $user;
-
     public $verified;
 
     public static function primaryColumn()
