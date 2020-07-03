@@ -10,13 +10,16 @@ class Service extends Base\ModelClass {
     public $codcliente;
     public $creationdate;
     public $detail;
-    public $problem;
     public $diagnostic;
-    public $solution;
+    public $exitdate;
     public $idservice;
+    public $manufacturer;
+    public $model;
+    public $problem;
+    public $solution;
     public $total;
     public $user;
-    public $exitdate;
+
     public $verified;
 
     public static function primaryColumn()

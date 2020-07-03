@@ -15,32 +15,40 @@
             </column>
         </group>
         <group name='details' numcolumns='12'>
-            <column name="detail" title='Información sobre el equipo' order="130" numcolumns='6'>
+            <column name="manufacturer" title='Fabricante/Marca' order="130" numcolumns='6'>
+                <widget type="select" fieldname="manufacturer" required="true">
+                    <values source="fabricantes" fieldcode="nombre" />
+                </widget>
+            </column>
+            <column name="model" title='Modelo/Referencia' order="140" numcolumns='6'>
+                <widget type="text" fieldname="model" readonly='dinamic'/>
+            </column>
+            <column name="detail" title='Información sobre el equipo' order="150" numcolumns='6'>
                 <widget type="textarea" fieldname="detail" readonly='dinamic'/>
             </column>
-            <column name="problem" title='Problema que presenta el equipo' order="140" numcolumns='6'>
+            <column name="problem" title='Problema que presenta el equipo' order="160" numcolumns='6'>
                 <widget type="textarea" fieldname="problem"/>
             </column>
-            <column name="diagnostic" title='Diagnostico realizado' order="150" numcolumns="6">
+            <column name="diagnostic" title='Diagnostico realizado' order="170" numcolumns="6">
                 <widget type="textarea" fieldname="diagnostic"/>
             </column>
-            <column name="solution" title='Solución del problema' order="160" numcolumns="6">
+            <column name="solution" title='Solución del problema' order="180" numcolumns="6">
                 <widget type="textarea" fieldname="solution"/>
             </column>
         </group>
         <group name="advanced" numcolumns="12">
-            <column name="user" order="170">
+            <column name="user" order="190">
                <widget type="select" fieldname="user" required='true' readonly='dinamic'>
                   <values source="users" fieldcode="nick" fieldtitle="nick"></values>
                </widget>
             </column>
-            <column name="total" title='Valor de la mano de obra' order="180">
+            <column name="total" title='Valor de la mano de obra' order="200">
                 <widget type="money" fieldname="total" readonly='dinamic'/>
             </column>
-            <column name="exitdate" title="Fecha de salida" order="190" numcolumns='2'>
+            <column name="exitdate" title="Fecha de salida" order="210" numcolumns='2'>
                 <widget type="date" fieldname="exitdate" readonly='dinamic'/>
             </column>
-            <column name="verified" title='Reparado' order="190" numcolumns='2'>
+            <column name="verified" title='Reparado' order="220" numcolumns='2'>
                 <widget type="checkbox" fieldname="verified"/>
             </column>
         </group>

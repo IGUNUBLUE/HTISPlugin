@@ -1,6 +1,8 @@
 <?php
 namespace FacturaScripts\Plugins\HtisPlugin\Extension\Controller;
 
+use FacturaScripts\Core\Base\DataBase\DataBaseWhere;
+
 class EditCliente
 {
    public function createViews()
@@ -10,19 +12,22 @@ class EditCliente
         };
    }
    
-   /*public function loadData($viewName, $view) 
+   public function loadData() 
    {
-        switch ($viewName) 
-        {
-            case 'ListService':
-                $codcliente = $this->getViewModelValue('EditCliente', 'codcliente');
-                $where = [new DataBaseWhere('codcliente', $codcliente)];
-                $view->loadData('', $where);
-                break;
+       return function($viewName, $view)
+       {
+            switch ($viewName) 
+            {
+                case 'ListService':
+                    $codcliente = $this->getViewModelValue('EditCliente', 'codcliente');
+                    $where = [new DataBaseWhere('codcliente', $codcliente)];
+                    $view->loadData('', $where);
+                    break;
 
-            default:
-                parent::loadData($viewName, $view);
-                break;     
-        }    
-    }*/
+                default:
+                    parent::loadData($viewName, $view);
+                    break;     
+            }
+       };
+    }
 }
