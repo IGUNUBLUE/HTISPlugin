@@ -1,5 +1,5 @@
 <?php
-namespace FacturaScripts\Plugins\HtisPlugin;
+namespace FacturaScripts\Plugins\HTISPlugin;
 
 use FacturaScripts\Core\Base\InitClass;
 

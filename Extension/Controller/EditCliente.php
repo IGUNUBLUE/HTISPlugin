@@ -1,5 +1,5 @@
 <?php
-namespace FacturaScripts\Plugins\HtisPlugin\Extension\Controller;
+namespace FacturaScripts\Plugins\HTISPlugin\Extension\Controller;
 
 use FacturaScripts\Core\Base\DataBase\DataBaseWhere;
 

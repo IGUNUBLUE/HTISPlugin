@@ -1,6 +1,6 @@
 <?php
 
-namespace FacturaScripts\Plugins\HtisPlugin\Controller;
+namespace FacturaScripts\Plugins\HTISPlugin\Controller;
 
 use FacturaScripts\Core\Lib\ExtendedController\ListController;
 
