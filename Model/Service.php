@@ -4,7 +4,8 @@ namespace FacturaScripts\Plugins\HTISPlugin\Model;
 
 use FacturaScripts\Core\Model\Base;
 
-class Service extends Base\ModelClass {
+class Service extends Base\ModelClass
+{
     use Base\ModelTrait;
 
     public $codcliente;

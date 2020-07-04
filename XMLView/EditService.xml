@@ -3,15 +3,15 @@
     <columns>
         <group name="basic" numcolumns="12">
             <column name="name" title='Cliente' order="100">
-               <widget type="autocomplete" fieldname="codcliente" onclick="EditCliente" readonly='dinamic'>
-                  <values source="clientes" fieldcode="codcliente" fieldtitle="nombre"></values>
-               </widget>
+                <widget type="autocomplete" fieldname="codcliente" onclick="EditCliente" readonly='dinamic'>
+                    <values source="clientes" fieldcode="codcliente" fieldtitle="nombre"></values>
+                </widget>
             </column>
             <column name="id" title='ID cliente' order="110" numcolumns='2'>
-                <widget type="text" fieldname="codcliente" readonly='true'/>
+                <widget type="text" fieldname="codcliente" readonly='true' />
             </column>
             <column name="creationdate" title="Fecha de entrada" order="120" numcolumns='2'>
-                <widget type="date" fieldname="creationdate" readonly='dinamic'/>
+                <widget type="date" fieldname="creationdate" readonly='dinamic' />
             </column>
         </group>
         <group name='details' numcolumns='12'>
@@ -21,38 +21,38 @@
                 </widget>
             </column>
             <column name="model" title='Modelo/Referencia' order="140" numcolumns='4'>
-                <widget type="text" fieldname="model" readonly='dinamic'/>
+                <widget type="text" fieldname="model" readonly='dinamic' />
             </column>
             <column name="serialn" title='Serial/SN' order="150" numcolumns='4'>
-                <widget type="text" fieldname="serialn" readonly='dinamic'/>
+                <widget type="text" fieldname="serialn" readonly='dinamic' />
             </column>
             <column name="detail" title='Información sobre el equipo' order="160" numcolumns='6'>
-                <widget type="textarea" fieldname="detail" readonly='dinamic'/>
+                <widget type="textarea" fieldname="detail" readonly='dinamic' />
             </column>
             <column name="problem" title='Problema que presenta el equipo' order="170" numcolumns='6'>
-                <widget type="textarea" fieldname="problem"/>
+                <widget type="textarea" fieldname="problem" />
             </column>
             <column name="diagnostic" title='Diagnostico realizado' order="180" numcolumns="6">
-                <widget type="textarea" fieldname="diagnostic"/>
+                <widget type="textarea" fieldname="diagnostic" />
             </column>
             <column name="solution" title='Solución del problema' order="190" numcolumns="6">
-                <widget type="textarea" fieldname="solution"/>
+                <widget type="textarea" fieldname="solution" />
             </column>
         </group>
         <group name="advanced" numcolumns="12">
             <column name="user" order="200">
-               <widget type="select" fieldname="user" required='true' readonly='dinamic'>
-                  <values source="users" fieldcode="nick" fieldtitle="nick"></values>
-               </widget>
+                <widget type="select" fieldname="user" required='true' readonly='dinamic'>
+                    <values source="users" fieldcode="nick" fieldtitle="nick"></values>
+                </widget>
             </column>
             <column name="total" title='Valor de la mano de obra' order="210">
-                <widget type="money" fieldname="total" readonly='dinamic'/>
+                <widget type="money" fieldname="total" readonly='dinamic' />
             </column>
             <column name="exitdate" title="Fecha de salida" order="220" numcolumns='2'>
-                <widget type="date" fieldname="exitdate" readonly='dinamic'/>
+                <widget type="date" fieldname="exitdate" readonly='dinamic' />
             </column>
             <column name="verified" title='Reparado' order="230" numcolumns='2'>
-                <widget type="checkbox" fieldname="verified"/>
+                <widget type="checkbox" fieldname="verified" />
             </column>
         </group>
     </columns>

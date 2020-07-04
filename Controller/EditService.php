@@ -5,7 +5,8 @@ namespace FacturaScripts\Plugins\HTISPlugin\Controller;
 use FacturaScripts\Core\Base\DataBase\DataBaseWhere;
 use FacturaScripts\Core\Lib\ExtendedController\EditController;
 
-class EditService extends EditController {
+class EditService extends EditController
+{
     public function getModelClassName()
     {
         return 'Service';
@@ -20,14 +21,15 @@ class EditService extends EditController {
 
         return $page;
     }
-    
-    protected function createViews() {
+
+    protected function createViews()
+    {
         parent::createViews();
-        
+
         $this->addListView('ListService', 'Service', 'Historial', 'fas fa-tools');
         $this->setTabsPosition('top');
     }
-    
+
     protected function loadData($viewName, $view)
     {
         switch ($viewName) {
@@ -39,7 +41,7 @@ class EditService extends EditController {
 
             default:
                 parent::loadData($viewName, $view);
-                if(!$this->views[$viewName]->model->exists()) {
+                if (!$this->views[$viewName]->model->exists()) {
                     $this->views[$viewName]->model->user = $this->user->nick;
                 }
                 break;

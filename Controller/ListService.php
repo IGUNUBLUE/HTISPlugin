@@ -4,7 +4,8 @@ namespace FacturaScripts\Plugins\HTISPlugin\Controller;
 
 use FacturaScripts\Core\Lib\ExtendedController\ListController;
 
-class ListService extends ListController {
+class ListService extends ListController
+{
     public function getPageData()
     {
         $page = parent::getPageData();
@@ -18,13 +19,13 @@ class ListService extends ListController {
     protected function createViews()
     {
         $this->addView('ListService', 'Service');
-        
+
         // Filters
         $this->addSearchFields('ListService', ['user']);
         $this->addFilterAutocomplete('ListService', 'codcliente', 'name', 'codcliente', 'clientes', 'codcliente', 'nombre');
         $this->addFilterPeriod('ListService', 'creationdate', 'period', 'creationdate');
         $this->addFilterCheckbox('ListService', 'verified', ' NO reparados', 'verified', 'IS NOT');
-        
+
         // OrderBy
         $this->addOrderBy('ListService', ['creationdate'], 'creation-date', 2);
     }
