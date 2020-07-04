@@ -22,11 +22,7 @@ class EditCliente
                     $codcliente = $this->getViewModelValue('EditCliente', 'codcliente');
                     $where = [new DataBaseWhere('codcliente', $codcliente)];
                     $view->loadData('', $where);
-                    break;
-
-                default:
-                    parent::loadData($viewName, $view);
-                    break;     
+                    break; 
             }
        };
     }
