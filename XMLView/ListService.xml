@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <view>
-    <columns>
-        <column name="id" title='ID servicio' order="100">
-            <widget type="text" fieldname="idservice" />
-        </column>
-        <column name="codcliente" display='right' title='ID cliente' order="110">
-            <widget type="text" fieldname="codcliente" />
-        </column>
-        <column name="name" order="120">
-            <widget type="autocomplete" fieldname="codcliente" onclick="EditCliente" readonly='dinamic'>
-                <values source="clientes" fieldcode="codcliente" fieldtitle="nombre"></values>
-            </widget>
-        </column>
-        <column name="creationdate" display="right" title="Fecha de entrada" order="130">
-            <widget type="date" fieldname="creationdate" />
-        </column>
-        <column name="exitdate" display='right' title="Fecha de salida" order="140">
-            <widget type="date" fieldname="exitdate" />
-        </column>
-        <column name="manufacturer" display='right' title='Fabricante/Marca' order="150">
-            <widget type="text" fieldname="manufacturer" />
-        </column>
-        <column name="model" display='right' title='Modelo/Referencia' order="160">
-            <widget type="text" fieldname="model" />
-        </column>
-        <column name="serialn" display='right' title='Serial/SN' order="170">
-            <widget type="text" fieldname="serialn" />
-        </column>
-        <column name="detail" display='none' title='Detalles del equipo' order="180">
-            <widget type="textarea" fieldname="detail" />
-        </column>
-        <column name="problem" display='none' title='Problema que presenta el equipo' order="190">
-            <widget type="textarea" fieldname="problem" />
-        </column>
-        <column name="diagnostic" display='right' title='Diagnostico realizado' order="200">
-            <widget type="textarea" fieldname="diagnostic" />
-        </column>
-        <column name="solution" display='none' title='Solución del problema' order="210">
-            <widget type="textarea" fieldname="solution" />
-        </column>
-        <column name="user" display='right' title='Tecnico' order="220">
-            <widget type="select" fieldname="user" required='true'>
-                <values source="users" fieldcode="nick" fieldtitle="nick"></values>
-            </widget>
-        </column>
-        <column name="verified" display='right' title='Reparado' order="230">
-            <widget type="checkbox" fieldname="verified" />
-        </column>
-        <column name="total" display='right' title='Costo' order="240">
-            <widget type="money" fieldname="total" />
-        </column>
-    </columns>
-    <rows>
-        <row type="status">
-            <option color="success" fieldname="verified">1</option>
-            <option color="warning" fieldname="verified">0</option>
-        </row>
-    </rows>
+  <columns>
+    <column name="id" title='ID servicio' order="100">
+      <widget type="text" fieldname="idservice" />
+    </column>
+    <column name="codcliente" display='right' title='ID cliente' order="110">
+      <widget type="text" fieldname="codcliente" />
+    </column>
+    <column name="name" order="120">
+      <widget type="autocomplete" fieldname="codcliente" onclick="EditCliente" readonly='dinamic'>
+        <values source="clientes" fieldcode="codcliente" fieldtitle="nombre"></values>
+      </widget>
+    </column>
+    <column name="creationdate" display="right" title="Fecha de entrada" order="130">
+      <widget type="date" fieldname="creationdate" />
+    </column>
+    <column name="exitdate" display='right' title="Fecha de salida" order="140">
+      <widget type="date" fieldname="exitdate" />
+    </column>
+    <column name="manufacturer" display='right' title='Fabricante/Marca' order="150">
+      <widget type="text" fieldname="manufacturer" />
+    </column>
+    <column name="model" display='right' title='Modelo/Referencia' order="160">
+      <widget type="text" fieldname="model" />
+    </column>
+    <column name="serialn" display='right' title='Serial/SN' order="170">
+      <widget type="text" fieldname="serialn" />
+    </column>
+    <column name="detail" display='none' title='Detalles del equipo' order="180">
+      <widget type="textarea" fieldname="detail" />
+    </column>
+    <column name="problem" display='none' title='Problema que presenta el equipo' order="190">
+      <widget type="textarea" fieldname="problem" />
+    </column>
+    <column name="diagnostic" display='right' title='Diagnostico realizado' order="200">
+      <widget type="textarea" fieldname="diagnostic" />
+    </column>
+    <column name="solution" display='none' title='Solución del problema' order="210">
+      <widget type="textarea" fieldname="solution" />
+    </column>
+    <column name="user" display='right' title='Tecnico' order="220">
+      <widget type="select" fieldname="user" required='true'>
+        <values source="users" fieldcode="nick" fieldtitle="nick"></values>
+      </widget>
+    </column>
+    <column name="verified" display='right' title='Reparado' order="230">
+      <widget type="checkbox" fieldname="verified" />
+    </column>
+    <column name="total" display='right' title='Costo' order="240">
+      <widget type="money" fieldname="total" />
+    </column>
+  </columns>
+  <rows>
+    <row type="status">
+      <option color="success" fieldname="verified">1</option>
+      <option color="warning" fieldname="verified">0</option>
+    </row>
+  </rows>
 </view>
